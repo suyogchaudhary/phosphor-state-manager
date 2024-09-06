@@ -23,6 +23,8 @@ int main()
     phosphor::state::manager::BMC manager(bus, objPathInst.c_str());
 
     bus.request_name(BMCState::interface);
+	
+    std::cout<<"Hello CDAC"<< std:endl;
 
     while (true)
     {
