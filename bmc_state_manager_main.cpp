@@ -1,5 +1,5 @@
 #include "config.h"
-
+#include <iostream>
 #include "bmc_state_manager.hpp"
 
 #include <sdbusplus/bus.hpp>
@@ -24,7 +24,7 @@ int main()
 
     bus.request_name(BMCState::interface);
 	
-    std::cout<<"Hello CDAC"<< std:endl;
+    std::cout<<"Hello CDAC"<< std::endl;
 
     while (true)
     {
